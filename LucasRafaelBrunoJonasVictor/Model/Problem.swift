@@ -12,6 +12,6 @@ final class Car: Codable {
     var name: String = ""
     var localization: String = ""
     var dateRecord: String = ""
-    var description: String = ""
+    var descriptionProblem: String = ""
     
 }
