@@ -13,4 +13,5 @@ final class Car: Codable {
     var localization: String = ""
     var dateRecord: String = ""
     var description: String = ""
+    
 }
