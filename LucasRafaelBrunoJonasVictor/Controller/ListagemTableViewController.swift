@@ -9,6 +9,9 @@ import UIKit
 
 class ListagemTableViewController: UITableViewController {
 
+    @IBOutlet weak var dataProblema: UILabel!
+    @IBOutlet weak var nomeProblema: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
