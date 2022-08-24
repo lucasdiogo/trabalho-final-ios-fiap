@@ -105,16 +105,14 @@
 		131C427B28B5916B00CC5E35 /* LucasRafaelBrunoJonasVictor */ = {
 			isa = PBXGroup;
 			children = (
+				131C42B528B5A90600CC5E35 /* UserInterface */,
+				131C42B428B5A8F500CC5E35 /* Model */,
+				131C42B328B5A8E100CC5E35 /* Controller */,
 				131C427C28B5916B00CC5E35 /* AppDelegate.swift */,
 				131C427E28B5916B00CC5E35 /* SceneDelegate.swift */,
-				131C428028B5916B00CC5E35 /* ViewController.swift */,
-				131C42AF28B5A04E00CC5E35 /* Criacao.storyboard */,
-				131C428228B5916B00CC5E35 /* Listagem.storyboard */,
 				131C428828B5916D00CC5E35 /* Assets.xcassets */,
-				131C428A28B5916D00CC5E35 /* LaunchScreen.storyboard */,
 				131C428D28B5916D00CC5E35 /* Info.plist */,
 				131C428528B5916B00CC5E35 /* LucasRafaelBrunoJonasVictor.xcdatamodeld */,
-				131C42B128B5A07F00CC5E35 /* Exibicao.storyboard */,
 			);
 			path = LucasRafaelBrunoJonasVictor;
 			sourceTree = "<group>";
@@ -134,6 +132,32 @@
 				131C42A228B5916D00CC5E35 /* LucasRafaelBrunoJonasVictorUITestsLaunchTests.swift */,
 			);
 			path = LucasRafaelBrunoJonasVictorUITests;
+			sourceTree = "<group>";
+		};
+		131C42B328B5A8E100CC5E35 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				131C428028B5916B00CC5E35 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		131C42B428B5A8F500CC5E35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		131C42B528B5A90600CC5E35 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				131C42AF28B5A04E00CC5E35 /* Criacao.storyboard */,
+				131C428228B5916B00CC5E35 /* Listagem.storyboard */,
+				131C428A28B5916D00CC5E35 /* LaunchScreen.storyboard */,
+				131C42B128B5A07F00CC5E35 /* Exibicao.storyboard */,
+			);
+			path = UserInterface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
