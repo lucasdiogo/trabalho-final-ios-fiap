@@ -19,6 +19,7 @@
 		131C42A328B5916D00CC5E35 /* LucasRafaelBrunoJonasVictorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131C42A228B5916D00CC5E35 /* LucasRafaelBrunoJonasVictorUITestsLaunchTests.swift */; };
 		131C42B028B5A04E00CC5E35 /* Criacao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 131C42AF28B5A04E00CC5E35 /* Criacao.storyboard */; };
 		131C42B228B5A07F00CC5E35 /* Exibicao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 131C42B128B5A07F00CC5E35 /* Exibicao.storyboard */; };
+		131C42B728B5AA1F00CC5E35 /* ListagemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131C42B628B5AA1F00CC5E35 /* ListagemTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		131C42A228B5916D00CC5E35 /* LucasRafaelBrunoJonasVictorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LucasRafaelBrunoJonasVictorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		131C42AF28B5A04E00CC5E35 /* Criacao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Criacao.storyboard; sourceTree = "<group>"; };
 		131C42B128B5A07F00CC5E35 /* Exibicao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exibicao.storyboard; sourceTree = "<group>"; };
+		131C42B628B5AA1F00CC5E35 /* ListagemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListagemTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				131C428028B5916B00CC5E35 /* ViewController.swift */,
+				131C42B628B5AA1F00CC5E35 /* ListagemTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				131C428128B5916B00CC5E35 /* ViewController.swift in Sources */,
 				131C427D28B5916B00CC5E35 /* AppDelegate.swift in Sources */,
 				131C427F28B5916B00CC5E35 /* SceneDelegate.swift in Sources */,
+				131C42B728B5AA1F00CC5E35 /* ListagemTableViewController.swift in Sources */,
 				131C428728B5916B00CC5E35 /* LucasRafaelBrunoJonasVictor.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,7 +481,7 @@
 				INFOPLIST_FILE = LucasRafaelBrunoJonasVictor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Listagem;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -504,7 +508,7 @@
 				INFOPLIST_FILE = LucasRafaelBrunoJonasVictor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Listagem;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
