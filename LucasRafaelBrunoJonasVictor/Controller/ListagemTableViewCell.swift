@@ -9,6 +9,14 @@ import UIKit
 
 class ListagemTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var labelProblemName: UILabel!
+    @IBOutlet weak var labelRecordDate: UILabel!
+    
+    func configure(with problem: Problem) {
+        labelProblemName.text = problem.name
+        labelRecordDate.text = problem.date
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

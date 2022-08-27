@@ -13,22 +13,38 @@ class CriacaoFormViewController: UIViewController {
     @IBOutlet weak var textFieldRecordDate: UITextField!
     @IBOutlet weak var textViewProblemDescription: UITextView!
     @IBOutlet weak var mapViewLocation: MKMapView!
+    @IBOutlet weak var buttonSave: UIButton!
+    lazy var locationMananger = CLLocationManager()
+    
+    var problem: Problem?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if let problem = problem {
+            textFieldProblemName.text = problem.name
+            textFieldRecordDate.text = problem.date
+            textViewProblemDescription.text = problem.detailing
+//            mapViewLocation.annotations = problem.localization
+            
+            title = "Atualização de problema"
+            buttonSave.setTitle("Atualizar", for: .normal)
+        }
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func save(_ sender: UIButton) {
+        if problem == nil {
+            problem = Problem(context: context)
+        }
+        problem?.name = textFieldProblemName.text
+        problem?.date = textFieldRecordDate.text
+        problem?.detailing = textViewProblemDescription.text
+//        problem?.localization =
+        
+        do {
+            try context.save()
+            navigationController?.popViewController(animated: true)
+        } catch {
+            print(error)
+        }
     }
-    */
-
 }

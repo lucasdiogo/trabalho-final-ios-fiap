@@ -47,6 +47,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Cadastrar"/>
+                                <connections>
+                                    <action selector="save:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7U1-D6-AaF"/>
+                                </connections>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Own-4y-XT9" userLabel="Map View Location">
                                 <rect key="frame" x="32" y="393" width="350" height="406"/>
@@ -81,6 +84,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Cadastro de Problema" id="b9b-gF-1fX"/>
                     <connections>
+                        <outlet property="buttonSave" destination="M89-Eg-8QB" id="ouH-6b-v8g"/>
                         <outlet property="mapViewLocation" destination="Own-4y-XT9" id="TRk-m8-836"/>
                         <outlet property="textFieldProblemName" destination="hVW-cb-mIH" id="G53-Qg-BUX"/>
                         <outlet property="textFieldRecordDate" destination="tH8-cB-9ve" id="bYd-iQ-u79"/>

@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import AVKit
 import MapKit
 
 class ExibicaoViewController: UIViewController {
@@ -16,11 +15,24 @@ class ExibicaoViewController: UIViewController {
     @IBOutlet weak var labelRecordDate: UILabel!
     @IBOutlet weak var textViewProblemDescription: UITextView!
     
+    var problem: Problem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as? CriacaoFormViewController
+        vc?.problem = problem
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        labelProblemName.text = problem.name
+        labelRecordDate.text = problem.date
+        textViewProblemDescription.text = problem.detailing
+    }
 
 
 }
-

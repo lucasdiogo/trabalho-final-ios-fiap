@@ -9,9 +9,27 @@ import UIKit
 import CoreData
 
 class ListagemTableViewController: UITableViewController {
-    
+
+    var problem: Problem!
+
+    lazy var fetchedResultsController: NSFetchedResultsController<Problem> = {
+        let fetchRequest: NSFetchRequest<Problem> = Problem.fetchRequest()
+        let sortDescriptor = NSSortDescriptor(key: "title", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        
+        let fetchedResultsController = NSFetchedResultsController(
+            fetchRequest: fetchRequest,
+            managedObjectContext: context,
+            sectionNameKeyPath: nil,
+            cacheName: nil)
+        
+        fetchedResultsController.delegate = self
+        return fetchedResultsController
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadProblem()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -20,35 +38,56 @@ class ListagemTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let vc = segue.destination as? ListagemTableViewController,
+              let indexPath = tableView.indexPathForSelectedRow else {return}
+        vc.problem = fetchedResultsController.object(at: indexPath)
+    }
+
+    //estrutura para leitura do json
+    private func loadProblem() {
+        //método paara retornar a listagem/busca
+        do {
+            try fetchedResultsController.performFetch()
+        } catch {
+            print(error)
+        }
+    }
+
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return fetchedResultsController.fetchedObjects?.count ?? 0
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ListagemTableViewCell else {
+            return UITableViewCell()
+        }
+        let problem = fetchedResultsController.object(at: indexPath)
+        cell.configure(with: problem)
         return cell
     }
-    */
+    
 
-    /*
+    
     // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let problem = fetchedResultsController.object(at: indexPath)
+            //deleta da memória do contexto
+            context.delete(problem)
+            //deleta de fato da tabela, persiste no banco de dados
+            try? context.save()
+        }
     }
-    */
 
     /*
     // Override to support editing the table view.
@@ -87,4 +126,11 @@ class ListagemTableViewController: UITableViewController {
     }
     */
 
+}
+
+extension ListagemTableViewController: NSFetchedResultsControllerDelegate {
+    //método que será chamado sempre que algo for alterado no context, então saberemos que há filme na área
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.reloadData()
+    }
 }
