@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Criacao Form View Controller-->
+        <!--Cadastro de Problema-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="CriacaoFormViewController" customModule="LucasRafaelBrunoJonasVictor" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,21 +17,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tH8-cB-9ve" userLabel="Text Field Record Date">
-                                <rect key="frame" x="32" y="110" width="100" height="34"/>
+                                <rect key="frame" x="32" y="154" width="100" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="hlh-pJ-Pp9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBS-nz-pSS" userLabel="Label Problem Description">
-                                <rect key="frame" x="32" y="160" width="350" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBS-nz-pSS" userLabel="Label Problem Description">
+                                <rect key="frame" x="32" y="204" width="65" height="17"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R2q-sH-AkF" userLabel="Text View Problem Description">
-                                <rect key="frame" x="32" y="183" width="350" height="150"/>
+                                <rect key="frame" x="32" y="227" width="350" height="150"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="LNJ-hj-JJA"/>
@@ -49,10 +49,10 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Cadastrar"/>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Own-4y-XT9" userLabel="Map View Location">
-                                <rect key="frame" x="32" y="349" width="350" height="450"/>
+                                <rect key="frame" x="32" y="393" width="350" height="406"/>
                             </mapView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do problema" textAlignment="justified" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hVW-cb-mIH" userLabel="Text Field Problem Name">
-                                <rect key="frame" x="32" y="60" width="350" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe o nome" textAlignment="justified" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hVW-cb-mIH" userLabel="Text Field Problem Name">
+                                <rect key="frame" x="32" y="104" width="350" height="34"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -61,7 +61,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Own-4y-XT9" secondAttribute="trailing" constant="32" id="1QA-ga-vXB"/>
-                            <constraint firstItem="RBS-nz-pSS" firstAttribute="top" secondItem="tH8-cB-9ve" secondAttribute="bottom" constant="16" id="20g-KM-vir"/>
                             <constraint firstItem="M89-Eg-8QB" firstAttribute="top" secondItem="Own-4y-XT9" secondAttribute="bottom" constant="16" id="6H5-Tv-KtM"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="M89-Eg-8QB" secondAttribute="trailing" constant="32" id="Dd5-Av-vOw"/>
                             <constraint firstItem="tH8-cB-9ve" firstAttribute="top" secondItem="hVW-cb-mIH" secondAttribute="bottom" constant="16" id="ETE-vc-FXc"/>
@@ -71,14 +70,16 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="M89-Eg-8QB" secondAttribute="bottom" constant="16" id="RM2-yQ-259"/>
                             <constraint firstItem="tH8-cB-9ve" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="VIP-SO-OFf"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="R2q-sH-AkF" secondAttribute="trailing" constant="32" id="WJN-kg-HFv"/>
+                            <constraint firstItem="RBS-nz-pSS" firstAttribute="top" secondItem="tH8-cB-9ve" secondAttribute="bottom" constant="16" id="cZ3-9r-zlz"/>
                             <constraint firstItem="Own-4y-XT9" firstAttribute="top" secondItem="R2q-sH-AkF" secondAttribute="bottom" constant="16" id="dPZ-RI-c2c"/>
                             <constraint firstItem="hVW-cb-mIH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="hAd-sD-ZUB"/>
                             <constraint firstItem="Own-4y-XT9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="k8I-hg-vgR"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hVW-cb-mIH" secondAttribute="trailing" constant="32" id="mS9-9t-RIS"/>
                             <constraint firstItem="M89-Eg-8QB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="mqL-xr-6qz"/>
-                            <constraint firstItem="R2q-sH-AkF" firstAttribute="top" secondItem="RBS-nz-pSS" secondAttribute="bottom" constant="6" id="ohi-wh-rF8"/>
+                            <constraint firstItem="R2q-sH-AkF" firstAttribute="top" secondItem="RBS-nz-pSS" secondAttribute="bottom" constant="6" id="xqS-ZE-310"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Cadastro de Problema" id="b9b-gF-1fX"/>
                     <connections>
                         <outlet property="mapViewLocation" destination="Own-4y-XT9" id="TRk-m8-836"/>
                         <outlet property="textFieldProblemName" destination="hVW-cb-mIH" id="G53-Qg-BUX"/>
@@ -88,7 +89,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10.144927536231885" y="61.607142857142854"/>
+            <point key="canvasLocation" x="900.00000000000011" y="61.607142857142854"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vsJ-4J-HJg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bks-0W-AfI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EcO-WJ-3yQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="jC8-sG-hcU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="egB-XE-cR0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39" y="62"/>
         </scene>
     </scenes>
     <resources>
