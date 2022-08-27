@@ -15,18 +15,77 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nH8-vo-EAY" userLabel="Map View Localizacao">
+                                <rect key="frame" x="0.0" y="44" width="414" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="xSH-jc-J3E"/>
+                                </constraints>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calçada irregular" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tR-jy-eSZ" userLabel="Label Nome Problema">
+                                <rect key="frame" x="16" y="460" width="182.5" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20/08/2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jox-zO-o8p" userLabel="Label Data Registro">
+                                <rect key="frame" x="16" y="498" width="67" height="15"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8np-Cr-fD6">
+                                <rect key="frame" x="0.0" y="519" width="414" height="343"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uvQ-6e-7FJ" userLabel="Text View Descricao">
+                                        <rect key="frame" x="16" y="16" width="382" height="311"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="uvQ-6e-7FJ" secondAttribute="bottom" constant="16" id="6eF-Zh-1q5"/>
+                                    <constraint firstItem="uvQ-6e-7FJ" firstAttribute="leading" secondItem="8np-Cr-fD6" secondAttribute="leading" constant="16" id="ENA-Gc-Zjd"/>
+                                    <constraint firstItem="uvQ-6e-7FJ" firstAttribute="top" secondItem="8np-Cr-fD6" secondAttribute="top" constant="16" id="Rif-oT-DI5"/>
+                                    <constraint firstAttribute="trailing" secondItem="uvQ-6e-7FJ" secondAttribute="trailing" constant="16" id="qVg-Dd-CMR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jox-zO-o8p" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="0eq-JK-sfF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nH8-vo-EAY" secondAttribute="trailing" id="C3U-hJ-Tvr"/>
+                            <constraint firstItem="8np-Cr-fD6" firstAttribute="top" secondItem="jox-zO-o8p" secondAttribute="bottom" constant="6" id="Dd7-Sg-pTx"/>
+                            <constraint firstItem="nH8-vo-EAY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Mjv-Cs-Bvl"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8np-Cr-fD6" secondAttribute="trailing" id="PUE-Fc-Rd3"/>
+                            <constraint firstItem="jox-zO-o8p" firstAttribute="top" secondItem="6tR-jy-eSZ" secondAttribute="bottom" constant="8" id="SML-eh-zA7"/>
+                            <constraint firstItem="nH8-vo-EAY" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Uvm-Am-gSW"/>
+                            <constraint firstItem="6tR-jy-eSZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="grc-17-mbk"/>
+                            <constraint firstItem="8np-Cr-fD6" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="iWS-9O-OqO"/>
+                            <constraint firstItem="8np-Cr-fD6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="rBj-jW-WAP"/>
+                            <constraint firstItem="6tR-jy-eSZ" firstAttribute="top" secondItem="nH8-vo-EAY" secondAttribute="bottom" constant="16" id="y6v-gD-qfp"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="95"/>
+            <point key="canvasLocation" x="131.8840579710145" y="94.419642857142847"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
