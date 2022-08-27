@@ -159,9 +159,9 @@
 			isa = PBXGroup;
 			children = (
 				131C42AF28B5A04E00CC5E35 /* Criacao.storyboard */,
+				131C42B128B5A07F00CC5E35 /* Exibicao.storyboard */,
 				131C428228B5916B00CC5E35 /* Listagem.storyboard */,
 				131C428A28B5916D00CC5E35 /* LaunchScreen.storyboard */,
-				131C42B128B5A07F00CC5E35 /* Exibicao.storyboard */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
