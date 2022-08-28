@@ -10,42 +10,43 @@
         <!--ListagemTableViewController-->
         <scene sceneID="2Ka-k4-OfX">
             <objects>
-                <tableViewController id="sUP-Oa-VRa" userLabel="ListagemTableViewController" customClass="ListagemTableViewController" sceneMemberID="viewController">
+                <tableViewController id="sUP-Oa-VRa" userLabel="ListagemTableViewController" customClass="ListagemTableViewController" customModule="LucasRafaelBrunoJonasVictor" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="oPg-18-o2L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="79" id="OJq-AQ-She" customClass="ListagemTableViewCell" customModule="LucasRafaelBrunoJonasVictor" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="79"/>
+                            <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="OJq-AQ-She" customClass="ListagemTableViewCell" customModule="LucasRafaelBrunoJonasVictor" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OJq-AQ-She" id="Z87-yR-hKa">
-                                    <rect key="frame" x="0.0" y="0.0" width="385.5" height="79"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="385.5" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do problema" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dq-Hc-3Kh" userLabel="Label Problem Name">
-                                            <rect key="frame" x="12" y="12" width="205.5" height="30"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipM-um-2MI">
+                                            <rect key="frame" x="28" y="19" width="58.5" height="27.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i69-aQ-xW0" userLabel="Label Record Date">
-                                            <rect key="frame" x="12" y="48" width="26.5" height="14.5"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                            <color key="textColor" systemColor="systemGrayColor"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ski-rI-xpQ">
+                                            <rect key="frame" x="28" y="51.5" width="44" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" red="0.66666666669999997" green="0.62745098040000002" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="2dq-Hc-3Kh" firstAttribute="leading" secondItem="Z87-yR-hKa" secondAttribute="leading" constant="12" id="8cW-Fj-JFz"/>
-                                        <constraint firstItem="i69-aQ-xW0" firstAttribute="leading" secondItem="Z87-yR-hKa" secondAttribute="leading" constant="12" id="czM-Pg-95N"/>
-                                        <constraint firstItem="2dq-Hc-3Kh" firstAttribute="top" secondItem="Z87-yR-hKa" secondAttribute="top" constant="12" id="jbb-N7-siW"/>
-                                        <constraint firstItem="i69-aQ-xW0" firstAttribute="top" secondItem="2dq-Hc-3Kh" secondAttribute="bottom" constant="6" id="q8Q-cP-AJb"/>
+                                        <constraint firstItem="ipM-um-2MI" firstAttribute="top" secondItem="Z87-yR-hKa" secondAttribute="topMargin" constant="8" id="LY8-wG-4rA"/>
+                                        <constraint firstItem="Ski-rI-xpQ" firstAttribute="leading" secondItem="ipM-um-2MI" secondAttribute="leading" id="O8R-ft-1bs"/>
+                                        <constraint firstItem="Ski-rI-xpQ" firstAttribute="top" secondItem="ipM-um-2MI" secondAttribute="bottom" constant="5" id="bva-eC-wE8"/>
+                                        <constraint firstItem="ipM-um-2MI" firstAttribute="leading" secondItem="Z87-yR-hKa" secondAttribute="leadingMargin" constant="8" id="tC6-ov-B0R"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="labelProblemName" destination="2dq-Hc-3Kh" id="mjX-8g-zhM"/>
-                                    <outlet property="labelRecordDate" destination="i69-aQ-xW0" id="ngC-Vz-rNJ"/>
+                                    <outlet property="labelProblemName" destination="ipM-um-2MI" id="S7I-4j-bnh"/>
+                                    <outlet property="labelRecordDate" destination="Ski-rI-xpQ" id="9iF-XD-XVY"/>
+                                    <segue destination="kd5-cQ-B64" kind="show" identifier="exibicaoSegue" id="0cH-N9-a3k"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -55,7 +56,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Problemas" id="zgI-oz-spx">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cM6-RH-NEm" userLabel="Add"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cM6-RH-NEm" userLabel="Add">
+                            <connections>
+                                <segue destination="xok-5b-WkS" kind="show" identifier="criacaoSegue" id="Fe8-TM-msE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hdo-Nx-J3v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -80,13 +85,30 @@
             </objects>
             <point key="canvasLocation" x="1078" y="92"/>
         </scene>
+        <!--Exibicao-->
+        <scene sceneID="BG4-dI-nJF">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Exibicao" storyboardName="Exibicao" id="kd5-cQ-B64" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Nea-PS-Y6H"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vx4-9b-xh7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2662" y="-26"/>
+        </scene>
+        <!--Criacao-->
+        <scene sceneID="Z5M-WT-m1h">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Criacao" storyboardName="Criacao" id="xok-5b-WkS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="eDo-6h-bHC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="54U-ca-hA6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2741" y="66"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

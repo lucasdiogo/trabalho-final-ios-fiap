@@ -27,13 +27,18 @@ class ListagemTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadProblem()
+//        loadProblem()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadProblem()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -72,6 +77,10 @@ class ListagemTableViewController: UITableViewController {
         let problem = fetchedResultsController.object(at: indexPath)
         cell.configure(with: problem)
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 90
     }
     
 
