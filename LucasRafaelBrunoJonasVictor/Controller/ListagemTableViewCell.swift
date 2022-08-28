@@ -9,6 +9,9 @@ import UIKit
 
 class ListagemTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var dataProblema: UILabel!
+    @IBOutlet weak var tituloProblema: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
