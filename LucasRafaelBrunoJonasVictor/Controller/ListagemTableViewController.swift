@@ -10,11 +10,9 @@ import CoreData
 
 class ListagemTableViewController: UITableViewController {
 
-    var problem: Problem!
-
     lazy var fetchedResultsController: NSFetchedResultsController<Problem> = {
         let fetchRequest: NSFetchRequest<Problem> = Problem.fetchRequest()
-        let sortDescriptor = NSSortDescriptor(key: "title", ascending: true)
+        let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
         
         let fetchedResultsController = NSFetchedResultsController(
@@ -39,7 +37,7 @@ class ListagemTableViewController: UITableViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let vc = segue.destination as? ListagemTableViewController,
+        guard let vc = segue.destination as? ExibicaoViewController,
               let indexPath = tableView.indexPathForSelectedRow else {return}
         vc.problem = fetchedResultsController.object(at: indexPath)
     }

@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Problemas-->
+        <!--ListagemTableViewController-->
         <scene sceneID="2Ka-k4-OfX">
             <objects>
-                <tableViewController id="sUP-Oa-VRa" customClass="ListagemTableViewController" sceneMemberID="viewController">
+                <tableViewController id="sUP-Oa-VRa" userLabel="ListagemTableViewController" customClass="ListagemTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="oPg-18-o2L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
