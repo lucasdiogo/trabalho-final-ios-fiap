@@ -13,6 +13,7 @@ class CriacaoFormViewController: UIViewController {
     @IBOutlet weak var textFieldRecordDate: UITextField!
     @IBOutlet weak var textViewProblemDescription: UITextView!
     @IBOutlet weak var mapViewLocation: MKMapView!
+    @IBOutlet weak var textFieldAddress: UITextView!
     @IBOutlet weak var buttonSave: UIButton!
     lazy var locationMananger = CLLocationManager()
     
@@ -24,6 +25,7 @@ class CriacaoFormViewController: UIViewController {
             textFieldProblemName.text = problem.name
             textFieldRecordDate.text = problem.date
             textViewProblemDescription.text = problem.detailing
+            textFieldAddress.text = problem.localization
 //            mapViewLocation.annotations = problem.localization
             
             title = "Atualização de problema"
@@ -38,11 +40,13 @@ class CriacaoFormViewController: UIViewController {
         problem?.name = textFieldProblemName.text
         problem?.date = textFieldRecordDate.text
         problem?.detailing = textViewProblemDescription.text
-//        problem?.localization =
+        problem?.localization = textFieldAddress.text
+        //        problem?.localization =
         
         do {
             try context.save()
-            navigationController?.popViewController(animated: true)
+//            navigationController?.popViewController(animated: true)
+            navigationController?.popToRootViewController(animated: true)
         } catch {
             print(error)
         }

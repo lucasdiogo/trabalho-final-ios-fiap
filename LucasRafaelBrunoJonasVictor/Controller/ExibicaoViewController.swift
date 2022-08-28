@@ -14,7 +14,9 @@ class ExibicaoViewController: UIViewController {
     @IBOutlet weak var labelProblemName: UILabel!
     @IBOutlet weak var labelRecordDate: UILabel!
     @IBOutlet weak var textViewProblemDescription: UITextView!
+    @IBOutlet weak var buttonEdit: UIButton!
     
+    @IBOutlet weak var textFieldAddress: UITextView!
     var problem: Problem!
     
     override func viewDidLoad() {
@@ -32,6 +34,7 @@ class ExibicaoViewController: UIViewController {
         labelProblemName.text = problem.name
         labelRecordDate.text = problem.date
         textViewProblemDescription.text = problem.detailing
+        textFieldAddress.text = problem.localization
     }
 
 

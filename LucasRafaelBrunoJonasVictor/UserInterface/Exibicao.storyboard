@@ -16,71 +16,90 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nH8-vo-EAY" userLabel="Map View Localization">
-                                <rect key="frame" x="0.0" y="44" width="414" height="400"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="xSH-jc-J3E"/>
-                                </constraints>
-                            </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calçada irregular" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tR-jy-eSZ" userLabel="Label Problem Name">
-                                <rect key="frame" x="16" y="460" width="182.5" height="30"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20/08/2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jox-zO-o8p" userLabel="Label Record Date">
-                                <rect key="frame" x="16" y="498" width="67" height="15"/>
+                                <rect key="frame" x="16" y="107" width="67" height="15"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8np-Cr-fD6">
-                                <rect key="frame" x="0.0" y="519" width="414" height="343"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uvQ-6e-7FJ" userLabel="Text View Problem Description">
-                                        <rect key="frame" x="16" y="16" width="382" height="311"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uvQ-6e-7FJ" userLabel="Text View Problem Description">
+                                <rect key="frame" x="16" y="148" width="382" height="107"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="uvQ-6e-7FJ" secondAttribute="bottom" constant="16" id="6eF-Zh-1q5"/>
-                                    <constraint firstItem="uvQ-6e-7FJ" firstAttribute="leading" secondItem="8np-Cr-fD6" secondAttribute="leading" constant="16" id="ENA-Gc-Zjd"/>
-                                    <constraint firstItem="uvQ-6e-7FJ" firstAttribute="top" secondItem="8np-Cr-fD6" secondAttribute="top" constant="16" id="Rif-oT-DI5"/>
-                                    <constraint firstAttribute="trailing" secondItem="uvQ-6e-7FJ" secondAttribute="trailing" constant="16" id="qVg-Dd-CMR"/>
+                                    <constraint firstAttribute="height" constant="107" id="IVn-EW-ZAc"/>
                                 </constraints>
-                            </view>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calçada irregular" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tR-jy-eSZ" userLabel="Label Problem Name">
+                                <rect key="frame" x="16" y="69" width="182.5" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyn-70-x3R">
+                                <rect key="frame" x="32" y="815" width="350" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Editar">
+                                    <backgroundConfiguration key="background"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="fCw-BT-nRm" kind="show" identifier="segueEdit" id="uQ2-bO-yK1"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dzv-nc-pih">
+                                <rect key="frame" x="16" y="271" width="382" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="HaY-Qg-5jG"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="jox-zO-o8p" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="0eq-JK-sfF"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nH8-vo-EAY" secondAttribute="trailing" id="C3U-hJ-Tvr"/>
-                            <constraint firstItem="8np-Cr-fD6" firstAttribute="top" secondItem="jox-zO-o8p" secondAttribute="bottom" constant="6" id="Dd7-Sg-pTx"/>
-                            <constraint firstItem="nH8-vo-EAY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Mjv-Cs-Bvl"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8np-Cr-fD6" secondAttribute="trailing" id="PUE-Fc-Rd3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gyn-70-x3R" secondAttribute="trailing" constant="32" id="4g7-1h-VMn"/>
+                            <constraint firstItem="6tR-jy-eSZ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="25" id="CLN-bH-ejL"/>
+                            <constraint firstItem="gyn-70-x3R" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="Dsb-zM-o0p"/>
+                            <constraint firstItem="Dzv-nc-pih" firstAttribute="top" secondItem="uvQ-6e-7FJ" secondAttribute="bottom" constant="16" id="JDv-pU-75G"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gyn-70-x3R" secondAttribute="bottom" constant="16" id="Lck-ae-CCG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Dzv-nc-pih" secondAttribute="trailing" constant="16" id="QTV-RC-Mxs"/>
                             <constraint firstItem="jox-zO-o8p" firstAttribute="top" secondItem="6tR-jy-eSZ" secondAttribute="bottom" constant="8" id="SML-eh-zA7"/>
-                            <constraint firstItem="nH8-vo-EAY" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Uvm-Am-gSW"/>
+                            <constraint firstItem="uvQ-6e-7FJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="W33-j3-GH2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uvQ-6e-7FJ" secondAttribute="trailing" constant="16" id="X9c-Bl-ilf"/>
+                            <constraint firstItem="Dzv-nc-pih" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="dxC-mI-ztd"/>
                             <constraint firstItem="6tR-jy-eSZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="grc-17-mbk"/>
-                            <constraint firstItem="8np-Cr-fD6" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="iWS-9O-OqO"/>
-                            <constraint firstItem="8np-Cr-fD6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="rBj-jW-WAP"/>
-                            <constraint firstItem="6tR-jy-eSZ" firstAttribute="top" secondItem="nH8-vo-EAY" secondAttribute="bottom" constant="16" id="y6v-gD-qfp"/>
+                            <constraint firstItem="uvQ-6e-7FJ" firstAttribute="top" secondItem="jox-zO-o8p" secondAttribute="bottom" constant="26" id="lSO-zI-Zuj"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonEdit" destination="gyn-70-x3R" id="zOG-pX-xR6"/>
                         <outlet property="labelProblemName" destination="6tR-jy-eSZ" id="oLk-dx-C9N"/>
                         <outlet property="labelRecordDate" destination="jox-zO-o8p" id="Rsg-OW-0fa"/>
-                        <outlet property="mapViewLocalization" destination="nH8-vo-EAY" id="wZq-bD-0KW"/>
+                        <outlet property="textFieldAddress" destination="Dzv-nc-pih" id="jh6-me-rZJ"/>
                         <outlet property="textViewProblemDescription" destination="uvQ-6e-7FJ" id="Ho3-QN-Yw8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="94.419642857142847"/>
+        </scene>
+        <!--Criacao-->
+        <scene sceneID="HxD-3E-fiC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Criacao" id="fCw-BT-nRm" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="N6q-HZ-5Dw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cb5-Zm-ZCg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850" y="70"/>
         </scene>
     </scenes>
     <resources>
